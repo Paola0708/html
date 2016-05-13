@@ -1,0 +1,39 @@
+doctype
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Reto Tabla
+ style(rel='stylesheet').
+  table {
+    border: 1px solid #AC05FA;
+    border-collapse: collapse;
+    margin: 100px auto;
+  }
+  table th {
+  background-color: #040404;
+  border: 2px solid #B80BAD;
+  color: #1FECE0;
+  font: 20px Thoma;
+  paddinh: 20px;
+  text-align: center; 
+  }
+
+body
+   table(border=1)
+     tr
+       th(colspan='10') Hola
+     tr
+       th(rowspan='3') Hola1
+       th columnas
+       th columnas
+       th columnas
+       th(rowspan='2') Hola1
+     tr
+       th(colspan='3') columnas
+     tr
+       th(colspan='1') columnas 
+       th columnas
+       th columnas
+       th columnas
+     
+       

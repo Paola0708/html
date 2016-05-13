@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario </title>
+</head>
+<body>
+  <form method="post">
+    <fieldset>
+      <legend>Datos de usuario</legend>
+      <!--Nombres-->
+      <label for="nombres">Nombres</label>
+      <input type="text" id="nombres"><br><br>
+      <!--contraseña-->
+      <label for="contraseña">Contraseña</label>
+      <input type="password" id="contraseña"><br><br>
+      <!--foto-->
+      <label for="foto">Foto</label><br>
+      <input type="file" id="foto" accept="image/*"><br><br>
+      <!-- Lenguajes de Programacion-->
+      <label>Lenguajes programacion</label><br>
+      <label>PHP
+        <input type="checkbox" name="lenguajes" value="PHP"><br>
+      </label>
+      <label>Java
+        <input type="checkbox" name="lenguajes" value="Java"><br>
+      </label>
+      <label>C#
+        <input type="checkbox" name="lenguajes" value="C#">
+      </label><br><br>
+      <!--Nacionalidad-->
+      <label>Nacionalidad</label><br>
+      <label>Colombia
+        <input type="radio" name="nacionalidad" value="Colombia"><br>
+      </label>
+      <label>Venezuela
+        <input type="radio" name="nacionalidad" value="Venezuela"><br>
+      </label>
+      <label>Ecuador
+        <input type="radio" name="nacionalidad" value="Ecuador"><br><br>
+      </label>
+      <!--genero-->
+      <label for="genero">Genero</label>
+      <select>
+        <option>Seleccione...</option>
+        <option value="F">Femenino</option>
+        <option value="M">Masculino</option><br><br><br><br>
+      </select>
+      <!--Deporte--><br><br><br><br><br>
+      <label for="deporte">Deporte </label>
+      <select multiple="multiple" id="deporte">
+        <option value="1">Futbol </option>
+        <option value="2">Baloncesto</option>
+        <option value="3">Tennis</option>
+        <option value="4">Natacion</option><br><br>
+      </select>
+      <!-- Descripcion --><br><br><br><br><br>
+      <label for="descripcion">descripcion </label><br>
+      <textarea id="descripcion" cols="40" rows="6"></textarea><br><br>
+      <!-- Botones--><br><br>
+      <input type="submit" value="Enviar Datos">
+      <input type="reset" value="Reiniciar Formulario">
+    </fieldset>
+  </form>
+</body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>canvas (html5)
+      <hr>
+      <h2>cuadrado</h2>
+      <canvas id="cuadrado"></canvas>
+      <h2>rectangulo</h2>
+      <canvas id="rectangulo"></canvas>
+      <h2>triangulo</h2>
+      <canvas id="triangulo"></canvas>
+      <h2>circulo</h2>
+      <canvas id="circulo"></canvas>
+    </h1>
+  </body>
+  <script>
+    // cuadrado
+    var canvas1 = document.getElementById('cuadrado');
+    var ctx1 = canvas1.getContext('2d');
+    ctx1.fillStyle = '#088';
+    ctx1.fillRect(20, 20, 100, 100);
+    
+    //rectangulo
+    var canvas1 = document.getElementById('rectangulo');
+    var ctx1 = canvas1.getContext('2d');
+    ctx1.fillStyle = '#FF00FF';
+    ctx1.fillRect(20, 20, 200, 100);
+    
+    //triangulo
+    var canvas1 = document.getElementById('triangulo');
+    var ctx1 = canvas1.getContext('2d');
+    ctx1.fillStyle = '#00F7FF';  
+    ctx1.beginPath();
+    ctx1.moveTo(130,0);
+    ctx1.lineTo(0,150);
+    ctx1.lineTo(300,150);
+    ctx1.fill();
+    
+    
+    //circulo
+    var canvas1  document.getElementById('circulo');
+    var ctx1 = canvas1.getContext('2d');
+    ctx1.fillStyle = '#F6FF00';
+    ctx1.begitpath();
+    ctx1.arc(60, 60, 50, 0, math.PI, false);
+    ctx1.closepath();
+    ctx1.fill();
+  </script>
+</html>

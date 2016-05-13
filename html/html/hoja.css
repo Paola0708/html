@@ -1,0 +1,18 @@
+
+html {
+	background: -webkit-linear-gradient(top, #9233D0, #75DBE3);
+	height: 100%;
+}
+body {
+	font: 4em Tahoma;
+	text-align: center;
+}
+h1 {
+	text-shadow: 2px 2px 20px #480246;
+	color: ##FF0080;
+	margin: 50px auto;
+	-webkit-transitional: all 0.5s ease-in-out;
+}
+h1:hover {
+	-webkit-transform: translateY(20px);
+}

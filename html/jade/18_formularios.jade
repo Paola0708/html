@@ -1,0 +1,92 @@
+doctype
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Formulario 
+body
+  form(method='post')
+    fieldset
+      legend Datos de usuario
+      //Nombres
+      label(for='nombres') Nombres
+      input(type='text', id='nombres')
+      br
+      br
+      //contraseña
+      label(for='contraseña') Contraseña
+      input(type='password', id='contraseña')
+      br
+      br
+      //foto
+      label(for='foto') Foto
+      br
+      input(type='file', id='foto', accept='image/*')
+      br
+      br
+      // Lenguajes de Programacion
+      label Lenguajes programacion
+      br
+      label PHP
+        input(type='checkbox', name='lenguajes', value='PHP')
+        br
+      label Java
+        input(type='checkbox', name='lenguajes', value='Java')
+        br
+       label C#
+         input(type='checkbox', name='lenguajes', value='C#')
+      br
+      br
+      //Nacionalidad
+      label Nacionalidad
+      br
+      label Colombia
+        input(type='radio', name='nacionalidad', value='Colombia')
+        br
+      label Venezuela
+        input(type='radio', name='nacionalidad', value='Venezuela')
+        br
+      label Ecuador
+        input(type='radio', name='nacionalidad', value='Ecuador')
+        br
+        br    
+      //genero
+      label(for='genero') Genero
+      select
+        option Seleccione...
+        option(value='F') Femenino
+        option(value='M') Masculino
+        br
+        br
+        br
+        br
+      
+       //Deporte
+      br
+      br
+      br
+      br
+      br
+      label(for='deporte') Deporte 
+      select(multiple='multiple', id='deporte')
+        option(value='1') Futbol 
+        option(value='2') Baloncesto
+        option(value='3') Tennis
+        option(value='4') Natacion
+        br
+        br
+       // Descripcion 
+      br
+      br
+      br
+      br
+      br
+      label(for='descripcion') descripcion 
+      br
+      textarea(id='descripcion', cols='40', rows="6")
+      br
+      br
+      // Botones
+      br 
+      br
+      input(type='submit', value='Enviar Datos')
+      input(type='reset', value='Reiniciar Formulario')
