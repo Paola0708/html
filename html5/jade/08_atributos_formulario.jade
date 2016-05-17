@@ -1,0 +1,26 @@
+doctype
+html(lang="en")
+ head
+   meta(charset="UTF-8")
+   title Atributos (Formulario)
+ body
+   h1 Atributos (Fomulario)
+   hr
+   fieldset
+     legend Validar / Autocompletar
+     form(method='post')
+      label(for='nombre') Nombre:
+      input(type='text', id='nombre', name='nombre' required)
+      br
+      input(type='submit', value='Enviar')
+   br
+   br
+   fieldset
+     legend Validar / No Autocompletar
+      form(method='post', autocomplete='off', novalite)
+      label(for='nombre') Nombre:
+      input(type='text', id='nombre', name='nombre' required)
+      br
+      input(type='submit', value='Enviar')
+   
+    
