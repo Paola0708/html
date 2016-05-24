@@ -1,0 +1,19 @@
+doctype
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Codigo (jade)
+  body
+    h1 Codigo (Jade)
+    //ciclo for
+   ul
+    - for (var i = 1; i <= 10; i++)
+      li elemento #{i}
+    //ciclo Each a un Arreglo
+   ol
+   -
+    list = ["Uno", "Dos", "Tres",
+          "Cuatro", "Cinco", "Seis"]
+ each item in list
+  li= item
+     

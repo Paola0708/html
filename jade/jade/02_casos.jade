@@ -1,0 +1,42 @@
+doctype
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Casos (jade)
+    style(stylesheet)
+      
+  body
+    h1 Casos (jade)
+      - var colores = 10
+     case colors
+       when 0
+         p tu no tienes colores
+       when 1
+         p tu tienes un color
+       default
+         p tu tienes #{colores} colores
+    br
+    br
+    
+    h1 caso2
+    - var frutas = 0
+case fruit
+  when 0
+  when 1
+    p tu tienes muy pocas frutas
+  default
+    p tu tienes #{frutas} frutas
+
+br
+br
+h1 caso3
+- var perros = 1
+case dogs
+  when 0: p tu no tienes perros
+  when 1: p tu tienes un perro
+  default: p tu tienes #{perros} perro
+     
+ 
+  
+ 
+  
