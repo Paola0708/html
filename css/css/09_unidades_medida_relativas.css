@@ -1,0 +1,16 @@
+/* unidades de Medida Relativas */
+body {
+  font: 16px fantasy;
+}
+/* Pixeles */
+h2.medidapx {
+  font-size: 18px;
+}
+/* Ems */
+h2.medidaem {
+  font-size: 2em;
+}
+/* esx*/
+h2.medidaex {
+  font-size: 3ex;
+}
