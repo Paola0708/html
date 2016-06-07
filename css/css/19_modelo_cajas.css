@@ -1,0 +1,34 @@
+body {
+  font: 3em fantasy;
+}
+h1 {
+  text-align: center;
+}
+section {
+  text-align: center;
+  font: fantasy;
+}
+.margin {
+  background-color: #939;
+  margin: 0px auto;
+  width: 800px;
+  height: 600px;
+}
+.border {
+  background-color: #9f3;
+  margin: 0px auto;
+  width: 700px;
+  height: 500px;
+}
+.padding {
+  background-color: #f06;
+  margin: 0px auto;
+  width: 600px;
+  height: 400px;
+}
+.content {
+  background-color: #0ff;
+  margin: 0px auto;
+  width: 500px;
+  height: 300px;
+}
