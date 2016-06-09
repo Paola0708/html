@@ -1,0 +1,41 @@
+div {
+  width: 250px;
+  height: 250px;
+
+}
+div#box1 {
+  background-color: red;
+}
+div#box2 {
+  background-image: url("../imgs/img.jpg");
+}
+
+div.box{
+	display: inline-block;
+	vertical-align: top;
+	background-color: top;
+	margin-left: 40px;
+	border: 2px solid #1E9FB2;
+	background-image: url("../imgs/img2.jpg");
+	
+}
+
+div.box span {
+	background-color: black;
+	display: block;
+	padding: 10px;
+	color: white;
+}
+
+div#box3-1{
+	background-color: repeat;
+}
+div#box3-2{
+	background-color: no-repeat;
+}
+div#box3-3{
+	background-color: repeat-x;
+}
+div#box3-4{
+	background-color: repeat-y;
+}
