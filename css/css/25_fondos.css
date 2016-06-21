@@ -1,41 +1,93 @@
-div {
-  width: 250px;
-  height: 250px;
-
+body {
+  background-color: #b307fa;
+  font: 16px Showcard Gothic;
+  color: #08e7f5;
 }
-div#box1 {
-  background-color: red;
+h2 {
+  background-color: #874fda;
+  padding: 20px;
 }
-div#box2 {
-  background-image: url("../imgs/img.jpg");
+section {
+  background-color: rgba(255,255,255,0.5);
+  height: 500px;
+  padding: 20px;
 }
-
-div.box{
-	display: inline-block;
-	vertical-align: top;
-	background-color: top;
-	margin-left: 40px;
-	border: 2px solid #1E9FB2;
-	background-image: url("../imgs/img2.jpg");
-	
+section div {
+  display: inline-block;
+  height: 400px;
+  margin-left: 10px;
+  width: 400px;
 }
-
-div.box span {
-	background-color: black;
-	display: block;
-	padding: 10px;
-	color: white;
+.fondocolor .fondo1 {
+  background-color: #dc1bd5;
 }
-
-div#box3-1{
-	background-color: repeat;
+.fondocolor .fondo2 {
+  background-color: #27c7d1;
 }
-div#box3-2{
-	background-color: no-repeat;
+.fondocolor .fondo3 {
+  background-color: #e41856;
 }
-div#box3-3{
-	background-color: repeat-x;
+.imagenfondo .imagen1 {
+  background-image: url("../imgs/nombre1.jpg");
 }
-div#box3-4{
-	background-color: repeat-y;
+.imagenfondo .imagen2 {
+  background-image: url("../imgs/nombre2.jpg");
+}
+.imagenfondo .imagen3 {
+  background-image: url("../imgs/nombre3.jpg");
+}
+.repetirfondo div {
+  background-color: #06ed3c;
+  background-image: url("../imgs/nombre5.jpg");
+  color: #98e314;
+  width: 298px;
+}
+section div h3 {
+  background-color: rgba(0,0,0,0.5);
+  color: #f80cea;
+  text-align: center;
+}
+.repetirfondo .fondo1 {
+  background-repeat: repeat;
+}
+.repetirfondo .fondo2 {
+  background-repeat: no-repeat;
+}
+.repetirfondo .fondo3 {
+  background-repeat: repeat-x;
+}
+.repetirfondo .fondo4 {
+  background-repeat: repeat-y;
+}
+.posicionfondo {
+  height: 1200px;
+}
+.posicionfondo div {
+  background-image: url("../imgs/nombre5.jpg");
+  background-repeat: no-repeat;
+}
+.posicionfondo .fondo1 {
+  background-position: center left;
+}
+.posicionfondo .fondo2 {
+  background-position: center center;
+}
+.posicionfondo .fondo3 {
+  background-position: center right;
+}
+.posicionfondo .fondo4 {
+  background-position: top left;
+}
+.posicionfondo .fondo5,
+background-position top center,
+.posicionfondo .fondo6,
+background-position top right,
+.posicionfondo .fondo7 {
+  background-position: bottom left;
+}
+.posicionfondo .fondo8 {
+  background-position: bottom center;
+}
+.posicionfondo .fondo9 {
+  background-position: bottom right;
 }
