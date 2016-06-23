@@ -1,0 +1,32 @@
+main {
+  margin: 0px auto;
+  width: 800px;
+}
+section {
+  color: #051cfa;
+  border: 2px solid #08FAD5;
+  vertical-align: top;
+  text-align: justify;
+  display: inline-block;
+  padding: 10px;
+}
+
+section.box1 p{
+	height: 200px;
+	width: 200px;
+	overflow: visible;
+}
+section.box2 p{
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+}
+section.box3 p{
+	height: 200px;
+	width: 200px;
+	overflow: scroll;
+}
+h4{
+	background-color: #ACACAC
+	
+}

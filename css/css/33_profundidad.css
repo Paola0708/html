@@ -1,0 +1,30 @@
+body {
+  font: 16 Showcard Gothic;
+}
+section {
+  border: 2px solid #000;
+  color: #fc008e;
+  height: 150px;
+  font-size: 5em;
+  width: 300px;
+  position: relative;
+}
+section.box1 {
+  background-color: #5d0288;
+  color: #05f9f0;
+  z-index: 1;
+}
+section.box2 {
+  background-color: #9807c2;
+  color: #0ebcc7;
+  top: -100px;
+  left: 150px;
+  z-index: 2;
+}
+section.box3 {
+  background-color: #b062e6;
+  color: #168f8b;
+  top: -150px;
+  left: 250px;
+  z-index: 3;
+}

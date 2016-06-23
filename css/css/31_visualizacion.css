@@ -1,0 +1,43 @@
+body {
+  color: #0404ff;
+  font: 16px Showcard Gothic;
+}
+section.visualizacion {
+  border: 2px solid #910b89;
+  height: 400px;
+  width: 400px;
+}
+section.visualizacion div {
+  color: #40b7fb;
+  font-size: 40px;
+  border: 2px solid #560ba2;
+  height: 60px;
+  line-height: 60px;
+  margin: 20px;
+  text-align: center;
+  width: 60px;
+  display: inline-block;
+}
+section.visualizacion div.desaparecer {
+  display: none;
+}
+section.visualizacion div.desaparecer1 {
+  visibility: hidden;
+}
+section.visualizacion h2 {
+  color: #fc0cb0;
+  text-align: center;
+  font: 15px Showcard Gothic;
+}
+main.tipos div,
+main.tipos a {
+  border: 2px solid #fb0153;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+main.tipos div.linea {
+  display: inline;
+}
+main.tipos a.bloque {
+  display: block;
+}
