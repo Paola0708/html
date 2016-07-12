@@ -1,0 +1,34 @@
+p {
+  font: 18px Fantasy;
+  color: #00f;
+}
+section {
+  display: inline-block;
+  height: 210px;
+  background-color: #808080;
+  width: 1000px;
+  border: 2px solid;
+  padding: 5px;
+}
+section div {
+  display: inline-block;
+  width: 242px;
+  height: 200px;
+  border: 2px solid;
+}
+div.w1 {
+  text-align: left;
+  background-color: #2dbcc9;
+}
+div.w2 {
+  text-align: right;
+  background-color: #df05ed;
+}
+div.w3 {
+  text-align: center;
+  background-color: #19e94f;
+}
+div.w4 {
+  text-align: justify;
+  background-color: #fb1989;
+}

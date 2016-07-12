@@ -1,0 +1,30 @@
+p {
+  font: 18px Fantasy;
+  color: #9e11e7;
+}
+section {
+  display: inline-block;
+  height: 420px;
+  background-color: #0be2f5;
+  width: 750px;
+  padding: 5px;
+}
+section div {
+  display: inline-block;
+  width: 242px;
+  height: 350px;
+  border: 2px solid;
+  vertical-align: top;
+}
+div.w1 p {
+  line-height: 1.2em;
+  background-color: #fb1989;
+}
+div.w2 p {
+  line-height: 1.5em;
+  background-color: #df05ed;
+}
+div.w3 p {
+  line-height: 2em;
+  background-color: #19e94f;
+}
