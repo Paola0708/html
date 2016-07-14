@@ -1,0 +1,28 @@
+body {
+  background-color: #0b1cfc;
+  color: #8237e8;
+  font: 16px Fantasy;
+}
+section {
+  border: 10px solid #0b1cfc;
+  background-color: #fff;
+  height: 300px;
+  margin: 40px auto;
+  text-align: center;
+  width: 400px;
+}
+section.pointer {
+  cursor: pointer;
+}
+section.move {
+  cursor: move;
+}
+section.wait {
+  cursor: wait;
+}
+section.help {
+  cursor: help;
+}
+section.image {
+  cursor: url("../imgs/lol.gif"), default;
+}
