@@ -1,0 +1,112 @@
+section#sprite {
+  background: transparent url("../imgs/emojis.png") no-repeat;
+  border: 2px solid #ddd;
+  height: 65px;
+  margin: 0px auto;
+  width: 60px;
+}
+section#sprite.anim1 {
+  background-position: 0px 0px;
+}
+section#sprite.anim2 {
+  background-position: -68px 0px;
+}
+section#sprite.anim3 {
+  background-position: -138px 0px;
+}
+section#sprite.anim4 {
+  background-position: -210px 0px;
+}
+section#sprite.anim5 {
+  background-position: -280px 0px;
+}
+section#sprite.anim6 {
+  background-position: -350px 0px;
+}
+section#sprite.anim7 {
+  background-position: -420px 0px;
+}
+section#sprite.anim8 {
+  background-position: 0px -70px;
+}
+section#sprite.anim9 {
+  background-position: -68px -70px;
+}
+section#sprite.anim10 {
+  background-position: -138px -70px;
+}
+section#sprite.anim11 {
+  background-position: -210px -70px;
+}
+section#sprite.anim12 {
+  background-position: -280px -70px;
+}
+section#sprite.anim13 {
+  background-position: -350px -70px;
+}
+section#sprite.anim14 {
+  background-position: -420px -70px;
+}
+section#sprite.anim15 {
+  background-position: 0px -130px;
+}
+section#sprite.anim16 {
+  background-position: -68px -130px;
+}
+section#sprite.anim17 {
+  background-position: -138px -130px;
+}
+section#sprite.anim18 {
+  background-position: -210px -130px;
+}
+section#sprite.anim19 {
+  background-position: -280px -130px;
+}
+section#sprite.anim20 {
+  background-position: -350px -130px;
+}
+section#sprite.anim21 {
+  background-position: -420px -130px;
+}
+section#sprite.anim22 {
+  background-position: 0px -210px;
+}
+section#sprite.anim23 {
+  background-position: -68px -210px;
+}
+section#sprite.anim24 {
+  background-position: -138px -210px;
+}
+section#sprite.anim25 {
+  background-position: -210px -210px;
+}
+section#sprite.anim26 {
+  background-position: -280px -210px;
+}
+section#sprite.anim27 {
+  background-position: -350px -210px;
+}
+section#sprite.anim28 {
+  background-position: -420px -210px;
+}
+section#sprite.anim29 {
+  background-position: 0px -280px;
+}
+section#sprite.anim30 {
+  background-position: -68px -280px;
+}
+section#sprite.anim31 {
+  background-position: -138px -280px;
+}
+section#sprite.anim32 {
+  background-position: -210px -280px;
+}
+section#sprite.anim33 {
+  background-position: -280px -280px;
+}
+section#sprite.anim34 {
+  background-position: -350px -280px;
+}
+section#sprite.anim35 {
+  background-position: -420px -280px;
+}
