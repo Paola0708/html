@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos Selectores CSS 3</title>
+	<link rel="stylesheet" href="css/01_selectores.css">
+</head>
+<body>
+	<h1>Nuevos selectores CSS 3</h1>
+	<hr>
+	<!-- p~ul -->
+	<!-- ~ -> Virguliña -->
+	<fieldset class="ejer1">
+		<legend>
+			<h2>p~ul</h2>
+        </legend>
+        <p>
+        	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <ul>
+        	<li>Lorem Ipsum 1</li>
+        	<li>Lorem Ipsum 2</li>
+        	<li>Lorem Ipsum 3</li>
+        </ul>
+        <ul>
+        	<li>Consectetur Adipisicing 1</li>
+        	<li>Consectetur Adipisicing 2</li>
+        	<li>Consectetur Adipisicing 3</li>
+        </ul>
+	</fieldset>
+	<hr>	
+    <!--.............. ( a[href^="https"] ) ................ -->
+	<fieldset class="ejer2">
+		<legend>
+			<h2>a[href^="https"]</h2>
+        </legend>
+        <a href="http://www.google.com">Ir a google</a>
+        <a href="http://www.yahoo.com">Ir a yahoo</a>
+        <a href="https://www.web.whatsapp.com">Ir a whatsapp</a>
+        <a href="http://www.facebook.com">Ir a facebook</a>
+   	</fieldset>
+   	<hr>	
+    <fieldset class="ejer3">
+		<legend>
+			<h2>a[href$=".pdf"]</h2>
+        </legend>
+       <a href="libros/mundo.text">Lavuelta al mundo en 80 dias</a> 
+       <a href="libros/alquimista.docx">El Alquimista</a>
+       <a href="libros/principito.pdf">El pricipito</a>
+       <a href="libros/funerales.doc">Los funerales de la mama grande</a>
+
+   	</fieldset>
+    <hr>	
+    <fieldset class="ejer4">
+		<legend>
+			<h2>a[href*="google"]</h2>
+        </legend>
+       <a href="http://translate.google">Ir a traductor</a> 
+       <a href="http://wikipedia.org">Ir a wikipedia</a>
+       <a href="http://www.youtube.com">Ir a youtube</a>
+       <a href="htto://accounts.google">Ir a gmail</a>
+    </fieldset>
+    <hr>
+     <fieldset class="ejer5">
+		<legend>
+			<h2>p:first-of-type</h2>
+        </legend>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </fieldset>
+    <hr>
+     <fieldset class="ejer6">
+		<legend>
+			<h2>p:last-of-type</h2>
+        </legend>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </fieldset>
+    <hr>
+    <fieldset class="ejer7">
+		<legend>
+			<h2>p:only-of-type</h2>
+        </legend>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </fieldset>
+    <hr>
+    <fieldset class="ejer8">
+		<legend>
+			<h2>p:only-child</h2>
+        </legend>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </fieldset>
+    <hr>
+    <fieldset class="ejer9">                                     
+		<legend>
+			<h2>p:nth-child(2)</h2>
+        </legend>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </fieldset>
+    <hr>
+    <fieldset class="ejer10">
+		<legend>
+			<h2>p:nth-last-child(2)</h2>
+        </legend>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </fieldset>
+    <hr>
+    <fieldset class="ejer11">
+		<legend>
+			<h2>p:nth-of-type(2)</h2>
+        </legend>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </fieldset>
+    <hr>
+    <fieldset class="ejer12">
+		<legend>
+			<h2>p:nth-last-of-type(2)</h2>
+        </legend>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </fieldset>
+    <hr>
+    <fieldset class="ejer13">
+		<legend>
+			<h2>p:last-child</h2>
+        </legend>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </fieldset>
+    <hr>
+    <fieldset class="ejer14">
+		<legend>
+			<h2>:root</h2>
+        </legend>
+        <p>Revisar el fondo de pantalla</p>
+        
+    </fieldset>
+    <hr>
+    <fieldset class="ejer15">
+		<legend>
+			<h2>p:empty</h2>
+        </legend>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+       		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </fieldset>
+	<hr>
+    <fieldset class="ejer16">
+		<legend>
+			<h2>#destino:target</h2>
+        </legend>
+        <a href="#destino1">Destino1</a>
+        <a href="#destino2">Destino2</a>
+        <a href="#destino3">Destino3</a>
+        <section>
+        	<p id="destino1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        	<p id="destino2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        	<p id="destino3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </section>
+    </fieldset>
+    <hr>
+    <fieldset class="ejer17">
+		<legend>
+			<h2>input:enabled</h2>
+        </legend>
+         
+        	<input type="text" placeholder="Nombre" enabled>
+        	<input type="text" placeholder="Apellido" enabled>
+        	<input type="text" placeholder="Edad" enable>
+        	
+       
+    </fieldset>
+    <hr>
+    <fieldset class="ejer18">
+		<legend>
+			<h2>input:disabled</h2>
+        </legend>
+         
+        	<input type="Escriba su nombre" placeholder="Nombre" disabled>
+        	<input type="Escriba su apellido" placeholder="Apellido" disabled>
+        	<input type="text" placeholder="Edad" disabled>
+        
+    </fieldset>
+     <hr>
+    <fieldset class="ejer19">
+		<legend>
+			<h2>input:checked</h2>
+        </legend>
+         	<label>
+         		<input type="checbox" name="pais">Colombia
+         		<input type="checbox" name="pais">Basil
+         		<input type="checbox" name="pais">Argentina
+         	</label>
+    </fieldset>
+</body>
+</html> 	
