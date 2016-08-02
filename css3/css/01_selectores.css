@@ -50,3 +50,25 @@ fieldset legend h2 {
 :root{
   background: -webkit-linear-gradient(left, #6D0AF3, #F307F0);
 }
+
+.ejer19 input[type=checkbox]{
+    -webkit-appearance none;
+    background-color: #560AA3;
+    cursor pointer;
+}
+
+.ejer19 input :checked{
+    background-color: ##06F6E8;
+}
+ 
+.ejer20 section :not(p){
+      background-color: #fc03e2;
+      border: 2px solid #16f4ec;
+      color: #0CEEDB;
+      padding: 8px;
+}
+  // Formato para la seleccion de la pagina 
+.ejer21 ::selection{
+  background-color: #0321FF;
+  color #fff;
+}
