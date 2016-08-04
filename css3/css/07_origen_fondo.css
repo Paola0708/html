@@ -1,0 +1,20 @@
+section {
+  background: #ccc url("../imgs/estrella.jpg") no-repeat;
+  height: 200px;
+  width: 400px;
+  margin: 20px auto;
+  padding: 100px;
+  border: 100px solid transparent;
+}
+.box1 {
+  background-origin: border-box;
+}
+.box2 {
+  background-origin: padding-box;
+}
+.box2 h2 {
+  color: #fff;
+}
+.box3 {
+  background-origin: content-box;
+}
