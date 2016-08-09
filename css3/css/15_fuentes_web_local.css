@@ -1,0 +1,22 @@
+body {
+  background-color: #a000fc;
+}
+section.principal {
+  background-color: #fb0360;
+  margin: 50px auto;
+  padding: 20px;
+  width: 680px;
+}
+h1 {
+  color: #03bff5;
+  font-family: 'Conv_Transformers';
+  font-size: 3.6em;
+  text-align: center;
+}
+p {
+  font-family: 'Emily';
+  font-size: 2.4em;
+  color: #5e276a;
+  line-height: 1em;
+  text-align: justify;
+}

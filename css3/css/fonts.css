@@ -1,0 +1,17 @@
+/** Transformers **/
+@font-face {
+	font-family: 'Conv_Transformers';
+	src: url('fonts/Transformers.eot');
+	src: local('☺'), url('fonts/Transformers.woff') format('woff'), url('fonts/Transformers.ttf') format('truetype'), url('fonts/Transformers.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/** Emily **/
+@font-face {
+	font-family: 'Emily';
+	src: url('fonts/Emily.eot');
+	src: local('☺'), url('fonts/Emily.woff') format('woff'), url('fonts/Emily.ttf') format('truetype'), url('fonts/Emily.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
