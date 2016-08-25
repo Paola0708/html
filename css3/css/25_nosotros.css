@@ -1,29 +1,19 @@
 section {
-  background-color: rgba(0,0,0,0.5);
+  background-color: #fe03cc;
   height: 500px;
   width: 650px;
   margin: 40px auto;
   padding: 20px;
   border-radius: 5px;
-  transition: all 1s;
-}
-section:hover {
-  transform: rotate(-180deg);
-  transition: all 1s;
 }
 nav {
   background-color: #a704fc;
   height: 80px;
   margin: 0px auto;
   border-radius: 5px;
-  transition: all 1s;
-}
-nav:hover {
-  transform: rotate(180deg);
-  transition: all 1s;
 }
 nav li {
-  background-color: #ef07f8;
+  background-color: #07f8de;
   display: inline-block;
   text-align: center;
   height: 80px;
@@ -44,13 +34,19 @@ a span {
   font-family: Comic Sans MS;
   display: block;
   text-align: center;
-  background-color: #0bf7f4;
-  margin-top: 52px;
+  background-color: #ff0048;
+  position: relative;
+  top: 52px;
   border-radius: 80% 20% 80% 20%;
   transition: all 1s;
 }
+span:hover {
+  transition: all 1s;
+  top: 0px;
+  left: 20px;
+}
 li:hover {
-  background-color: #05fb73;
+  background-color: #050bfb;
   transition: all 1s;
 }
 li:hover span {
@@ -60,17 +56,18 @@ li:hover span {
 article {
   height: 400px;
   width: 500px;
-  background-color: #2339dd;
+  background-color: #f6ff08;
   margin: 20px auto;
   border-radius: 80% 20% 80% 20%;
   transition: all 1s;
 }
 article:hover {
   transition: all 1s;
-  background-color: #4176ce;
+  background-color: #a141ce;
 }
 article div {
-  background: #a203fd url("../imgs/minion2.jpg") no-repeat center top;
+  background: #0ffd03 url("../imgs/minion2.jpg") no-repeat center top;
+  background-size: 200%;
   height: 300px;
   width: 300px;
   border-radius: 80% 20% 80% 20%;
@@ -83,5 +80,5 @@ article div {
 article div:hover {
   -webkit-transform: rotate(180deg) scale(1);
   transition: all 1s ease-out;
-  background-color: #04fafd;
+  background-color: #1ea0e3;
 }
