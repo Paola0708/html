@@ -1,0 +1,38 @@
+section {
+  width: 95%;
+  height: 900px;
+  margin: 0px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#790084+41,2b3272+60 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8e368d+0,6c357c+20,418bba+59,1c2160+100 */
+  background: #8e368d; /* Old browsers */
+  background: -moz-linear-gradient(top, #8e368d 0%, #6c357c 20%, #418bba 59%, #1c2160 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #8e368d 0%, #6c357c 20%, #418bba 59%, #1c2160 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #8e368d 0%, #6c357c 20%, #418bba 59%, #1c2160 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+div {
+  width: 350px;
+  height: 900px;
+  margin-left: 40px;
+}
+p.hola {
+  height: 200px;
+  width: 200px;
+  background: url("../imgs/imagen.png") no-repeat top center;
+  background-size: cover;
+}
+div#lorem1 {
+  height: 100px;
+  width: 250px;
+  margin-left: 40px;
+}
+p.primero {
+  font-size: 50px;
+  display: block;
+  color: #fff;
+}
+p.segundo {
+  font-size: 20px;
+  display: block;
+  color: #16a2d6;
+  margin-top: -50px;
+}
