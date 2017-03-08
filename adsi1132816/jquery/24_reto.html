@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+</head>
+<body>
+<style>
+	@font-face{
+		src: url("txt/Pokemon Hollow.ttf");
+		font-family: "Pokemon";
+	}
+	body{
+		margin:0px;
+		border:0px;
+		padding: 0px;
+		outline: none;
+		text-decoration: none;
+		font: 20px Pokemon;
+		
+	}
+	h1{
+		text-align: center;
+			
+		text-transform: uppercase;
+		
+	}
+	h2{
+			text-align: center;
+			line-height: 40px;
+			border-bottom: 2px solid orange;
+			
+	}
+	#h22){
+		border-bottom:2px solid red;
+	}
+	section#container{
+		width: 800px;
+		margin: 50px auto;
+		display: block;
+		background-color: 	rgba(31,34,153,0.6);
+		text-align: center;
+			
+	}
+
+	section#container article{
+		width: 200px;
+		display: inline-block;
+		vertical-align: top;
+		margin-left:-10px;
+		background-color: #A710AD;
+		
+	}
+	section#contaniner article:first{
+		background-color: 	orange;
+	}
+	section#container article div{
+		width: 200px;
+		height: 200px;
+		border:1px solid ;
+		margin:20px auto;
+		border-radius:50%;
+	}
+	div.pokemon{
+		background-size:cover;
+	}
+	.pokev1{
+		background: url(imgs/canela1.jpg)no-repeat center center;
+	}
+	.pokev2{
+		background: url(imgs/canela2.jpg)no-repeat center center;
+	}
+	.pokev3{
+		background: url(imgs/canela3.jpg)no-repeat center center;
+	}
+	.pokemon:hover{
+		transition: all 1s ease-out;
+		background-color: 	green;
+		transform: scale(1.1);
+	}
+</style>
+	
+	<section id="container">
+		<h1>Canela's evolution</h1>
+		<article id="firste">
+			<h2 id="h11">Primero evolucion</h2>
+			<div  id="pok1" class="pokemon pokev1"></div>
+		</article>
+		<article id="seconde">
+			<h2 id="h22">segunda evolucion</h2>
+			<div  id="pok2" class="pokemon pokev2"></div>
+		</article>
+		<article id="thirde">
+			<h2 id="h33">tercera evolucion</h2>
+			<div  id="pok3" class="pokemon pokev3"></div>
+		</article>
+	</section>
+	
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+		
+	</script>
+</body>
+</html>

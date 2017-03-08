@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto Eventos Tiempo</title>
+</head>
+<style>
+
+	input#tiempo{
+		height: 20px;
+		width: 100px;
+		border-radius: 20px 70px;
+		text-align: center;
+	}
+	input#countdown{
+		height: 20px;
+		width: 100px;
+		border-radius: 50px 70px;
+		text-align: center;
+		background-color: #CD04F8;
+	}
+	h1#crono{
+		margin: 100px 150px;
+	}
+
+</style>
+<body>
+	<h1>Reto Eventos Tiempo</h1>
+	<hr>
+	<input type="number" id="tiempo" >
+	<input type="submit" id="countdown" value="ingresar"></input>
+
+	<h1 id="crono"></h1>
+	<script>
+		var countdown = document.getElementById('countdown');
+		var cronometro = document.getElementById('crono');
+		countdown.onclick = function () {
+			
+		var tiempo = document.getElementById('tiempo').value;
+		
+		var intervalo = setInterval(function(){
+			if(tiempo == 0){
+				clearInterval(intervalo);
+			}
+			crono.innerHTML = tiempo ;
+			tiempo--;
+		},1000);
+		}
+	</script>
+</body>
+</html>

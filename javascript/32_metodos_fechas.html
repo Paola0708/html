@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metodos fecha</title>
+</head>
+<body>
+	<h1>Metodos fecha</h1>
+	<hr>
+	<h2>Fechas (GET)</h2>
+	<ul id="fechasget"></ul>
+	<h2>fechas (SET)</h2>
+	<ul id="fechasset"></ul>
+
+	<script>
+		var fget = document.getElementById('fechasget');
+		var fset = document.getElementById('fechasset');
+
+		//GET
+		var gfecha = new Date();
+		fget.innerHTML =  "<li>Numero Completa: "+gfecha+"</li>";
+		fget.innerHTML +=  "<li>Numero Dia en el mes: "+gfecha.getDate()+"</li>";
+		fget.innerHTML +=  "<li>Numero Año: "+gfecha.getFullYear()+"</li>";
+		fget.innerHTML +=  "<li>Numero Mes: "+(gfecha.getMonth()+1)+"</li>";
+		fget.innerHTML +=  "<li>Numero Dia en la semana: "+gfecha.getDay()+"</li>";
+
+		//SET
+		var sfecha = new Date();
+		sfecha.setDate(25);
+		fset.innerHTML =  "<li>Numero Dia en el mes: "+sfecha.getDate()+"</li>";
+		sfecha.setFullYear(2020);
+		fset.innerHTML +=  "<li>Numero Año: "+sfecha.getFullYear()+"</li>";
+		sfecha.setMonth(11);
+		fset.innerHTML +=  "<li>Numero Completa: "+sfecha.getMonth()+"</li>";
+		sfecha.setHours(9);
+		fset.innerHTML +=  "<li>Numero Completa: "+sfecha.getHours()+"</li>";
+
+
+	</script>
+</body>
+</html>

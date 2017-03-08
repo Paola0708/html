@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto Vectores</title>
+</head>
+<style>
+	body{
+		background-color: #D406F9;
+		font-family: fantasy;
+	}
+	.center{
+		display: block;
+		margin: 0px auto;
+	}
+	h2{
+		border-bottom: 1px solid rgba(255,255,255,.2);
+		text-align: center;
+		padding-bottom: 4px;
+		color: rgba(255,255,255,.8);
+	}
+	nav ul {
+		padding: 0px;
+		margin: 10px 150px auto;
+		max-width: 960px;
+	}
+	nav ul li{
+		display: inline-block;
+		list-style: none;
+		margin: 4px;
+		width: 120px;
+		height: 200px;
+		-webkit-transition: all 0.5s ease-in;
+
+	}
+	nav ul li:hover{
+		cursor: pointer;
+		-webkit-transform: translateY(-20px) scale(1.1);
+	}
+	nav ul li.c1{
+		background: url(imgs/canela1.jpg) no-repeat center center;
+	}
+	nav ul li.c2{
+		background: url(imgs/canela2.jpg) no-repeat center center;
+	}
+	nav ul li.c3{
+		background: url(imgs/canela3.jpg) no-repeat center center;
+	}
+	nav ul li.c4{
+		background: url(imgs/canela4.jpg) no-repeat center center;
+	}
+	nav ul li.c5{
+		background: url(imgs/canela5.jpg) no-repeat center center;
+	}
+	nav ul li.character{
+		background-size: cover;
+	}
+	nav ul li.character:hover,
+	nav ul li.active{
+		background-color: rgba(0,0,0,0.6);
+		cursor: pointer;
+		-webkit-transform: translateY(-20px) scale(1.05);
+
+	}
+	div.config{
+		max-width: 960px;
+		margin: 0px auto;
+		text-align: center;
+	}
+	div.config select,
+	div.config button{
+		background-color: #F089D7;
+		border: none;
+		padding: 10px 40px;
+		outline: none;
+		color: purple;
+		font-size: 0.8em;
+		border-radius: 0px;
+		-webkit-appearance: none;
+		-webkit-transition: all 0.5s ease-in;
+	}
+	div.config select{
+		background: #06BAF5 url(imgs/flecha1.png) no-repeat 170px center;
+		background-size: 8%;
+	}
+	div.config button:hover{
+		cursor: pointer;
+		background-color: #E124B3;
+	}
+	nav ul#showvector li{
+			background-size: contain;
+		height: 180px;
+		width: 80px;
+	}
+	nav ul#showvector li span{
+		background-color: rgba(255,255,255,.6);
+		font-size: 2em;
+		line-height: 1.6em;
+		padding: 4px 8px;	
+	}
+</style>
+<body>
+	<img src="imgs/logo canela.png" class="center" width="300px">
+	<nav>
+		<h2>Seleccione el personaje:</h2>
+		<ul>
+			<li id="c1" class="character c1"></li>
+			<li id="c2" class="character c2"></li>
+			<li id="c3" class="character c3"></li>
+			<li id="c4" class="character c4"></li>
+			<li id="c5" class="character c5"></li>
+		</ul>
+	</nav>
+	<section>
+		<h2>configuracion:</h2>
+
+		<div class="config">
+			<select id="position">
+				<option value="">Seleccione Posicion:</option>
+				<option value="1">Inicio</option>
+				<option value="2">Final</option>
+			</select>
+			<button id="add">Adicionar</button>
+			<button id="delete">Elminar</button>
+		</div>
+		<h2>lista:</h2>
+		<nav>
+			<ul id="showvector"></ul>
+		</nav>
+		
+	</section>
+	<script>
+		var characters = document.getElementsByClassName('character');
+		var showvector = document.getElementById('showvector');
+		var cselected = null;
+		var position = null;
+		var btnadd = document.getElementById('add');
+		var btndelete = document.getElementById('delete');
+		var chvector = new Array();
+
+		for (var i = 0; i < characters.length; i++){
+			characters[i].onclick = function(){
+				inactivecharacter();
+				activeCharacter(this);
+			}
+		}
+		function inactivecharacter(){
+			for (var i = 0; i < characters.length; i++){
+				characters[i].classList.remove('active');
+			}
+		}
+		function activeCharacter(elem){
+			elem.classList.add('active');
+			cselected = elem.getAttribute('id');
+
+		}
+		function renderVector(){
+			showvector.innerHTML = "";
+			for (var i = 0; i < chvector.length; i++){
+				showvector.innerHTML += "<li class="+chvector[i]+"><span>"+i+"</span></li>";
+			}
+		}
+
+		function validateInputs(){
+		    position=document.getElementById('position').value;
+			if(cselected != null && position.length > 0){
+				return true;
+			} else{
+				alert('por favor debe seleccionar un personaje y un posicion');
+			}
+		}
+		
+		btnadd.onclick = function(){
+			if(validateInputs()){
+				if(position == 1){
+					chvector.unshift(cselected);
+				}
+				if(position == 2){
+					chvector.push(cselected);
+				}
+				
+				renderVector();
+			} 
+		}
+		btndelete.onclick = function(){	
+			if(validateInputs()){
+				if(position == 1){
+					chvector.shift();
+				}
+				if(position == 2){
+					chvector.pop();
+				}
+				
+				renderVector();
+			} 
+		}
+
+	</script>
+</body>
+</html>

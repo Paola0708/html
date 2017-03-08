@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metodos GET jQuery</title>
+</head>
+<body>
+	<h1>Metodos GET jQuery</h1>
+	<hr>
+
+	<p >HOLA MUNDO!</p>
+	<button id="btn1" type="submit">Mostrar Texto</button>
+
+
+	<ul >
+		<li>Cocker Espaniel</li>
+		<li>Labrador</li>
+		<li>Bernes de la Montaña</li>
+		<li>Lobo Siberiano</li>
+	</ul>
+	<button id="btn2" type="submit">Mostrar HTML</button> 
+	<br>
+	<br>
+
+	<input  type="text">
+	<button id="btn3" type="submit">Mostrar Valor</button> 
+	<br>
+	<br>
+	
+	<a href="www.google.com">Ir a Google</a>
+	<button id="btn4">Mostrar Atributo</button>
+	
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#btn1').click(function(event) {
+				alert("" + $("p").text());
+			});
+			/*----------------------------------*/
+			$('#btn2').click(function(event) {
+				alert("" + $("ul").html());
+			});
+			/*----------------------------------*/
+			$('#btn3').click(function(event) {
+				alert("" + $("input").val());
+			});
+			/*----------------------------------*/
+			$('#btn4').click(function(event) {
+				alert("" + $("a").attr("href"));
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax Load jQuery</title>
+</head>
+<body>
+	<h1>Ajax Load jQuery</h1>
+	<hr>
+	<section id="menu"></section>
+	<section id="bienvenida"></section>
+	<section id="pie"></section>
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			/*---Forma Simpre---*/
+			$('#menu').load('text/file.txt #menu');
+		});
+	</script>
+</body>
+</html>

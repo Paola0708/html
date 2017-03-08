@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>eventos jQuery</title>
+</head>
+<style>
+	div{
+		border: 10px solid;
+		padding: 40px;
+		width: 600px;
+	}
+</style>
+<body>
+	<h1>eventos jQuery</h1>
+	<hr>
+	<button id="dclick">Doble Click</button>
+	<br>
+	Detector de eventos: <strong></strong>
+	<br>	
+	<div>poner cursor en esta division</div>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('strong').text('la pagina ya cargo.');
+			$nveces = 0;
+			//DOUBLE CLICK 
+			$('#dclick').dblclick(function(event) {
+			    $(this).text('Doble Click ('+(++$nveces)+')');
+			});
+			//RESIZE
+			$(window).resize(function(event){
+				$('strong').text('la pagina cambio de tamaño.');
+			});
+
+			//SCROLL
+			$(document).scroll(function(event) {
+				$('strong').text('la pagina se desplazo.');
+			});
+
+			//MOUSE OVER
+			$('div').mouseover(function(event) {
+				$rojo = Math.floor(Math.random()*250);
+				$verde = Math.floor(Math.random()*250);
+				$azul = Math.floor(Math.random()*250);
+
+				$(this).css('background-color','rgb('+$rojo+','+$verde+','+$azul+')');
+			});
+
+			//MOUSE MOVE
+			$(document).mousemove(function(event) {
+				$('strong').text('Movio el Mouse.');
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto Evento Scroll jQuery</title>
+</head>
+<style>
+	.hidenav{
+		animation: 0.5s animHideNav ease-in 1 forwards;
+	}
+	@keyframes animHideNav{
+		0%{
+			top: 0px;
+			opacicy: 1;
+		}
+		100%{
+			top: -100px;
+			opacity: 0;
+		}
+	}
+</style>
+<body>
+	<h1>Reto Evento Scroll jQuery</h1>
+	<hr>
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			$lastScrollTop = 0;
+			$wiHeight = $(window).height();
+
+			$(window).scroll(function(event) {
+				$st = $(this).scrollTop();
+				if ($st > $lastScrollTop && $st >120){
+					//DOWN
+					$('nav').addClass('hidenav');
+				} else{
+					//up 
+					if($st + $winHeight < $(document).height()){
+						$('nav').removeClass('hidenav');
+					}
+				}
+				$lastScrollTop = $st;
+			});
+		});
+	</script>
+</body>
+</html>

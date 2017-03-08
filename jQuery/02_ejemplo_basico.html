@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo Basico</title>
+	<style>
+		body{
+			font-family: Comic Sans Ms;
+		}
+		p{
+			background-color: #eee;
+			border:4px solid #aaa;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Ejemplo Basico</h1>
+	<hr>
+
+	<article>
+		<h1>Lista de Parrafos</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem amet deleniti repudiandae architecto ea? Totam delectus consequatur provident adipisci voluptates tempora amet, error iure modi alias, officiis itaque asperiores aliquid.</p>
+		<p>Velit consequatur molestiae nostrum aperiam quos necessitatibus minus, cumque consequuntur, ad aut assumenda reprehenderit reiciendis doloribus eos ipsum deleniti odit, amet, nam laborum aspernatur! Corporis, atque tempora quam. Perferendis, qui!</p>
+		<p>Veritatis adipisci laboriosam dolorem sit, maxime rerum consectetur pariatur culpa reprehenderit sapiente tenetur, accusantium odio distinctio iste tempora expedita eaque voluptatem aut! Molestias natus commodi dignissimos tempora repudiandae aliquam nihil.</p>
+		<p>Autem facilis ad dolorem alias quia incidunt iusto excepturi, dolor ratione reiciendis beatae minus ea quidem eius dolorum deleniti accusantium veniam omnis, quis hic in! Tempore repudiandae consequuntur officia, necessitatibus.</p>
+		<p>Accusantium quos quod dignissimos ut possimus itaque assumenda, tempore molestias qui quo voluptas similique, inventore officia vel fugiat vitae laborum ratione. Officiis necessitatibus libero consequatur soluta itaque. Eius, laboriosam, tenetur?</p>
+	</article>
+	<button>Eliminar Parrafo</button>
+	
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('button').click(function(event) {
+				$('p').first().remove(); 
+					
+			});
+		});
+	</script>
+</body>
+</html>

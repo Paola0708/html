@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto Animacion jQuery</title>
+	<style>
+		body{
+			background-color: #03A7FC;
+			color: #fff;
+			font-family: Comic Sans Ms;
+		}
+		h1{
+			text-align: center;
+		}
+		hr{
+			border:1px solid #fff;
+			margin-bottom: 30px;
+		}
+		section#slider{
+			box-shadow: 0px 0px 20px 2px #000;
+			height: 400px;
+			margin: 20px auto;
+			overflow: hidden; 
+			width: 800px;
+
+		}
+		div.sliders{
+			position: relative;
+			width: 2400px;
+		}
+		div.sliders img{
+			display: inline-block;
+		}
+		div.sliders img:nth-child(2){
+			margin-left: -4px;
+		}
+		div.sliders img:nth-child(3){
+			margin-left: -6px;
+		}
+		div.controls{
+			position: relative;
+			top: -200px;
+		}
+		div.controls button{
+			background-color: rgba(0,0,0,0.5);
+			color: #fff;
+			font-size: 1.2em;
+			border:none;
+			padding: 20px;
+			position: absolute;
+			transition: all 0.5s ease-in;
+		}
+		div.controls button:hover{
+			cursor: pointer;
+			background-color: rgba(0,0,0,0.8);
+			transform: scale(1.1);
+		}
+		div.controls button#btnNext{
+			right: 0px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Ecadenamiento jQuery</h1>
+	<hr>
+	<section id="slider">
+		<div class="sliders">
+			<img src="imgs/perro1.jpg" width="800px" height="400px">
+			<img src="imgs/perro2.jpg" width="800px" height="400px">
+			<img src="imgs/perro3.jpg" width="800px" height="400px">
+		</div>
+		<div class="controls">
+			<button id="btnPrev"> &#x276e; </button>
+			<button id="btnNext"> &#x276f; </button>
+		</div>
+	</section>
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			$pos = 0;
+			/*-----------------------------*/
+			$('#btnNext').click(function(event) {
+				if($pos > -1600){
+					$pos -=800;
+					$('.sliders').animate({left: $pos+'px'}, 500)
+				}
+				
+			});
+			/*-----------------------------*/
+			$('#btnPrev').click(function(event) {
+				if($pos < 0){
+					$pos +=800;
+					$('.sliders').animate({left: $pos+'px'}, 500)
+				}
+				
+			});
+		});
+	</script>
+</body>
+</html>

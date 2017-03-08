@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metodos SET jQuery</title>
+</head>
+<body>
+	<h1>Metodos GET jQuery</h1>
+	<hr>
+
+	<p >HOLA MUNDO!</p>
+	<button id="btn1" type="submit">Mostrar Nuevo Texto</button>
+
+
+	<ul >
+		<li>Cocker Espaniel</li>
+		<li>Labrador</li>
+		<li>Bernes de la Montaña</li>
+		<li>Lobo Siberiano</li>
+	</ul>
+	<button id="btn2" type="submit">Mostrar HTML</button> 
+	<br>
+	<br>
+
+	<input  type="text">
+	<button id="btn3" type="submit">Mostrar Nuevo Valor</button> 
+	<br>
+	<br>
+	
+	<a href="www.google.com">Ir a Google</a>
+	<button id="btn4">Mostrar Atributo</button>
+	
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#btn1').click(function(event) {
+				$("p").text("Hola Mundo Cruel");
+			});
+			/*----------------------------------*/
+			$('#btn2').click(function(event) {
+				$("ul").html("<ul><li>Canela</li><li>Jaku</li><li>Polo</li><li>Luna</li></ul>");
+			});
+			/*----------------------------------*/
+			$('#btn3').click(function(event) {
+				$("input").val("Hola Mundo ADSI");
+			});
+			/*----------------------------------*/
+			$('#btn4').click(function(event) {
+				 $("a").attr("href","https://www.youtube.com/");
+			});
+		});
+	</script>

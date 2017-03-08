@@ -1,0 +1,106 @@
+body{
+	font-size: 16px;
+	font-family: verdana;
+}
+
+section{
+	height: 500px;
+	margin: 120px auto; 
+	width: 800px;
+}
+section input{
+	border-radius: 50px 20px;
+	text-align: center;
+	padding: 10px;
+	margin: 50px 300px auto;
+}
+section h1{
+	background-color: rgba(0,0,0,0.3);
+	text-align: center;
+	font-family: Comic Sans MS;
+	padding: 50px 20px;
+}
+section#stage1{
+	background-color: #C221DF;
+}
+section#stage2{
+	background-color: #FC00FF;
+}
+section button{
+	background-color: #A202B5;
+	color: #fff;
+	border: none;
+	border-radius: 20px 50px;
+	display: block;
+	font-size: 1em;
+	padding: 10px 20px;
+	margin: 10px 360px auto;
+	transition: all 0.5s ease-in;
+}
+section button:hover{
+	background-color: #530068;
+	cursor: pointer;
+}
+img{
+	border-radius: 20px;
+	margin: 30px;
+}
+ul{
+	
+	height: 200px;
+	background-color: green;
+	 
+	margin:auto;
+	width: 90%;
+	text-align: center;
+	
+}
+ul li{
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	display: inline-block;
+	border-radius: 20px;
+	transition: all 0.5s ease-in;
+
+	
+}
+li#op1{
+	background: black 	url(../imgs/piedra.jpg) no-repeat center center;
+	background-size: contain;
+
+}
+li#op2{
+	background: black   	url(../imgs/papel.jpg) no-repeat center center;
+	background-size: contain;
+}
+li#op3{
+	background: black   	url(../imgs/tijera.jpg) no-repeat center center;
+	background-size: contain;
+}
+ul li:hover,ul li.activar{
+	transform: scale(1.2) ;
+	transition: all 0.5s ease-in;
+}
+h1{
+	color:black;
+}
+
+nav#padre{
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	
+}
+nav div{
+s	width: 40%;
+	height: 200px;
+	border-radius: 20px;
+	display: inline-block;
+	
+}
+img{
+	width: 200px;
+	height: 200px;
+	border:2px solid red;
+}

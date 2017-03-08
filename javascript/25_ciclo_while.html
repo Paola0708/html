@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ciclos (while) JS</title>
+</head>
+<body>
+	<h1>Ciclos (while) JS</h1>
+	<hr>
+
+	<table border="1">
+		<tr id="pares"></tr>
+	</table>
+
+	<script>
+		var pares = document.getElementById('pares');
+		var i = 0;
+
+		while(i<=100){
+			if (i%2 == 0) {
+				pares.innerHTML += "<td>"+i+"</td>";
+			}
+			i++;
+		}
+	</script>
+</body>
+</html>

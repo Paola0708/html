@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrastrar / Sotar jQuery UI</title>
+	<style>
+		.circle{
+			background-color: #FB04CF;
+			border-radius: 120px;
+			height: 120px;
+			width: 120px;
+		}
+		.square{
+			background-color: #2B02FC;
+			height: 120px;
+			width: 120px;
+		}
+		.target{
+			background-color: #D502FB;
+			border-radius: 160px;
+			height: 320px;
+			margin: 10px auto;
+			width: 320px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Arrastrar / Sotar jQuery UI</h1>
+	<hr>
+	<section class="circle"></section>
+	<br>
+	<section class="square"></section>
+	<section class="target"></section>
+	
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.circle, .square').draggable({
+				cursor: 'move',
+				revert: 'invalid'
+			});
+			$('.target').droppable({
+				accept: ".circle",
+				drop: function(event,ui){
+					$(this).css('background-color', '#00FFF0');
+					$(ui.draggable).css('background-color', '#fff');
+				}
+			})
+		});
+	</script>
+</body>
+</html>

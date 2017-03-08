@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Encadenamiento jQuery</title>
+</head>
+<style>
+	.ball{
+		background-color: #DE03FF;
+		border-radius: 50%;
+		height: 200px;
+		margin: 50px;
+		width: 200px;	
+		position: relative;
+	}
+</style>
+<body>
+	<h1>Reto Animacion</h1>
+	<hr>
+	<div class="ball"></div>
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('body').on('mouseover', '.ball', function(event) {
+				event.preventDefault();
+				$(this).animate({left: 300+'px'}, 2000);
+				$(this).animate({left: 300+'px', top:300+'px'}, 2000);
+				$(this).animate({left: 0+'px', top:300+'px'}, 2000);
+				$(this).animate({left: 150+'px', top:150+'px'}, 2000);
+				$(this).animate({width: 400+'px', height:400+'px'}, 2000);
+			});
+
+				
+		});
+
+
+	</script>
+</body>
+</html>

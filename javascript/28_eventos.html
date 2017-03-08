@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos JS</title> 
+	<style>
+		html{
+			background: -webkit-radial-gradient(red,blue);
+
+			height: 100%;
+		}
+		body{
+			font: 16px Arial;
+			margin: 0px;
+		}
+		h1{
+			color: #fff;
+			background-color: rgba(0,0,0,0.3);
+			font-size: 1.4em;
+			margin: 0px;
+			padding: 20px;
+			text-transform: uppercase;
+		}
+		select{
+			background: #fff url(imgs/flecha.png) no-repeat 160px center;
+			background-size: 12%;
+			-webkit-appearance: none;
+			border:none;
+			border-radius: 0px;
+			color: #666;
+			outline: none;
+			padding: 20px;
+			margin: 20px 0px 0px 20px;
+			width: 200px;
+		}
+		hr{
+			margin: 0px;
+			border: 1px solid rgba(255,255,255,0.3);
+		}
+		figure#per {
+			height: 500px;
+			margin:50px auto;
+			position: relative;
+			width: 500px;
+			-webkit-transition: 0.5s all;
+		}
+		figure#per.per1 {
+			background: url(imgs/perro1.png) no-repeat;
+		}
+		figure#per.per2 {
+			background: url(imgs/perro2.png) no-repeat;
+		}
+		figure#per.per3 {
+			background: url(imgs/perro3.png) no-repeat;
+		}
+		
+		figure#per.out-anim{
+			-webkit-animation: 0.5s animOut ease-in 1;
+		}
+		 @-webkit-keyframes animOut{
+			0% { -webkit-transform: translateX(0px); }
+			100% { -webkit-transform: translateX(1000px); }
+		}
+		figure#per.in-anim{
+			-webkit-animation: 0.5s animIn ease-in 1;
+		}
+		 @-webkit-keyframes animIn{
+			0% { -webkit-transform: translateX(-1000px); }
+			100% { -webkit-transform: translateX(0px); }
+		}
+	</style>
+</head>
+<body id="doc">
+	<h1>Eventos JS</h1>
+	<hr>
+	
+
+	<select id="tperro">
+		<option value="">Seleccione Vehiculo...</option>
+		<option value="1">perro 1</option>
+		<option value="2">perro 2</option>
+		<option value="3">perro 3</option>
+	</select>
+	<figure id="per"></figure>
+
+	<script>
+		var doc = document.getElementById('doc');
+		var tperro = document.getElementById('tperro');
+		var per = document.getElementById('per');
+		var pl = pt = 0;
+		per.classList.add('per1');
+
+		doc.onkeydown = function(evt){
+			switch(evt.keyCode){
+				case 37:
+					console.log("LEFT");
+					pl += -20;
+					per.style.left = pl + 'px';
+					break;
+				case 38:
+					console.log("TOP");
+					pt += -20;
+					per.style.top = pt + 'px';
+					break;
+				case 39:
+					console.log("RIGHT");
+					pl += 20;
+					per.style.left = pl + 'px';
+					break;
+				case 40:
+					console.log("BOTTOM");
+					pt += 20;
+					per.style.top = pt + 'px';
+					break;
+			}
+		}
+
+		tperro.onchange = function(){
+			//per.className ='';
+			per.classList.remove('in-anim');
+			per.classList.add('out-anim');
+			if(this.value == 1){
+				 setTimeout(function() {
+				 	per.classList.remove('per2', 'per3', 'out-anim');
+					per.classList.add('in-anim', 'per1');
+				},500);
+			}
+				
+			if(this.value == 2){
+				 setTimeout(function() {
+				 	per.classList.remove('per1', 'per3', 'out-anim');
+					per.classList.add('in-anim', 'per2');
+				},500);
+			}
+			if(this.value == 3){
+				 setTimeout(function() {
+				 	per.classList.remove('per1', 'per2', 'out-anim');
+					per.classList.add('in-anim', 'per3');
+				},500);
+			}
+		}
+
+	</script>
+</body>
+</html>
