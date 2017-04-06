@@ -1,0 +1,11 @@
+body{
+	background-color: black;
+}
+
+div.container-fluid{
+	padding-top:100px;
+}
+ul.block-center {
+	margin: 0px auto;
+	width: 320px;
+}
